@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrawleredListComponent } from './components/crawlered-list/crawlered-list.component';
 import { SearchUrlComponent } from './components/search-url/search-url.component';
+import { TreeComponentComponent } from './components/tree-component/tree-component.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchUrlComponent
+  },
+  {
+    path: 'tree',
+    component: TreeComponentComponent
   },
 
 ];

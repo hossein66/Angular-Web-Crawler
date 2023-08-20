@@ -12,7 +12,7 @@ const routes: Routes = [
     ),
 
   },
-  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "", redirectTo: "crawler", pathMatch: "full" },
   { path: "**", redirectTo: "" },
 ];
 
