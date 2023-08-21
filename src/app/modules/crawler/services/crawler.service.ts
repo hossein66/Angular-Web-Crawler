@@ -31,7 +31,7 @@ export class CrawlerService {
         for (let index = 0; index < links.length; index++) {
           const linkTitle = links[index].text.trim();
           const linkHref = links[index].getAttribute("href") || '';
-          if (this.isValidURL(linkHref) && linkHref.search('141.ir') < 0) {
+          if (this.isValidURL(linkHref)) {
             this.createNode(deepLevel, url, linkTitle, linkHref)
           }
         }
